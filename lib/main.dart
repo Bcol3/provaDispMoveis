@@ -57,7 +57,24 @@ class _LoginState extends State<Login> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              //Image.asset("imagens/bruno.jpg"),
+              Container(
+                height: 350,
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.white,
+                    style: BorderStyle.solid,
+                    width: 5
+                  ),
+                  shape: BoxShape.circle,
+                  image: DecorationImage(
+                    image: AssetImage("imagens/Molho.jpg"),
+
+                    //fit: BoxFit.fill,
+
+                  )
+                ),
+                //child: Image.asset(,)
+              ),
               
               Divider(
                 height: 100,
@@ -377,7 +394,18 @@ class Info extends StatelessWidget {
         padding: EdgeInsets.all(60),
         child: Column(
           children: <Widget>[
-          Image.asset("imagens/bruno.jpg"),
+          Container(
+            height: 600,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              image: DecorationImage(
+              image: AssetImage("imagens/bruno.jpg"),
+              fit: BoxFit.none
+              ), 
+              ),
+            ),
+            
+            
           
           Divider(
             color: Colors.red[400],
